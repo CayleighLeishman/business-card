@@ -1,50 +1,99 @@
 :root{
-    --box-shadow: rgba(0, 0, 0, 0.1);
-    --background: #ddcc9c;
+    --box-shadow: rgba(39, 11, 11, 0.1);
+    --box-shadow-hover: rgba(0, 0, 0, 0.2);
+    --white:#fff;
+    --dark: #2c3e50;
+    --pinkish: #ca2e55;
+
 }
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --blueish: #5956FF;
+        --pinkish: #6b2839;
+         --white: #1D1E2C;
+         --dark: #fff;
+       
+    }
+} */
 
 body{
- font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
      margin: 0;
      padding: 0;
-     background-color: 
-     var(--background)
+     background-color: var(--background);
           
 }
+    /* ======================
+     *      Naviagation    *
+     ======================*/
+nav {
+    background-color: var(--background);
+   display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
 
-    nav {
-            background-color: #444;
-            display: flex;
-            justify-content: center;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
-        }
-        nav a:focus, nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+}
+nav a:focus, nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
 
 /* ========================
         busines card page
   ========================== */
 
-card{
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 8px; 
-  padding: 16px;
-  font-family: Arial, sans-serif; 
-  box-shadow: 0 4px 8px var(box-shadow);
+  @keyframes vertical-spin{
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+/* hover effect for profile image */
+.profile-img {
+    border-radius: 50%; 
+    width: 100px; 
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+.profile-img:hover{
+    animation-name: vertical-spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
 
 }
 
-#profile-img{
-    border-radius: 50%; 
+#card{
+  width: 300px;
+  background-color: var(--white);
+  border-radius: 8px; 
+  padding: 16px;
+  font-family: Arial, sans-serif; 
+  border:var(--box-shadow);
+  box-shadow: 0 120px 8px 8px var(--box-shadow);
+ position: center;
+  margin: 0 auto;
+
+}
+
+
+
+.profile-img{
     width: 100px; 
     height: 100px;
   
@@ -54,36 +103,48 @@ card{
     margin-bottom: 16px;
 }
 
+#card p{
+    font-size: 14px;
+   
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
 
 /* ============================
     Fernando's Resume!
  ========================== */
 
-      .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
+.container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center; 
+    margin: 0;
+    font-size: 1.5em;;
+    color: #2c3e50;
+  }
+  .section {
+      margin-bottom: 20px;
+  }
+  .section h2 {
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+  }
+  ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  ul li {
+      margin-bottom: 10px;
+  }
 
 
  /* ==========================
