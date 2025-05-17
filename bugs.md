@@ -40,3 +40,8 @@ white
 black (for text and background features)
 
 I will also be open to feedback from fernando, but as of right now he  dosen't know I'm making this. 
+
+
+May 17th 2025
+
+I tried to work on the gallery, i added images, I tried to update the resuma nd I goot the navigation to work where I need it to. (aside from the fact that it goes on top of the profile picture, but I will figure that out later)
