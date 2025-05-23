@@ -1,10 +1,19 @@
 :root{
-    --box-shadow: rgba(39, 11, 11, 0.1);
+    --box-shadow: rgba(103, 101, 206, 0.1);
+    --box-shadow-hover: rgba(126, 42, 149, 0.2);
+    --white:#fff;
+    --dark: #3b1142;
+    --pinkish: #f618b7;
+    --background: #e3da9c;
+
+/*  professionalish colr scheme
+        --box-shadow: rgba(39, 11, 11, 0.1);
     --box-shadow-hover: rgba(0, 0, 0, 0.2);
     --white:#fff;
     --dark: #2c3e50;
     --pinkish: #621313;
-    --background: #e3da9c;
+    --background: #e3da9c; */
+
 }
 
 
